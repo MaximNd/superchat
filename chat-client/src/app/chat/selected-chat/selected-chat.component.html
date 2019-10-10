@@ -1,0 +1,14 @@
+<div class="row-column selected-chat-container" *ngIf="currentContact">
+  <div class="contact-info-container">
+    <app-contact-info [contact]="currentContact"></app-contact-info>
+  </div>
+  <!-- <div class="spacer"></div> -->
+  <div #messagescontainer class="messages-container">
+    <app-messages [messages]="currentMessages"></app-messages>
+  </div>
+
+  <app-send-message></app-send-message>
+</div>
+<div *ngIf="!currentContact" class="row select-chat">
+  Select Chat to start!!!
+</div>

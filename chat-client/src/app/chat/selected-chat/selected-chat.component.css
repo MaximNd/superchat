@@ -1,0 +1,51 @@
+.selected-chat-container {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 100%;
+  background-color: #d7dfe7;
+}
+.selected-chat-container .spacer {
+  height: 10px;
+  z-index: -99;
+}
+.selected-chat-container .messages-container {
+  height: 100%;
+  overflow-y: scroll;
+  margin-right: 8px;
+}
+
+.selected-chat-container .messages-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.selected-chat-container .messages-container::-webkit-scrollbar {
+  width: 10px;
+  background-color: #becbd9;
+  border-radius: 10px;
+}
+
+.selected-chat-container .messages-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #9daab9;
+}
+
+.selected-chat-container .messages-container::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.selected-chat-container .messages-container::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.selected-chat-container .contact-info-container {
+  z-index: 11;
+}
+.select-chat {
+  height: 100%;
+  background-color: #d7dfe7;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #9aa8b7;
+  justify-content: center;
+  align-items: center;
+}

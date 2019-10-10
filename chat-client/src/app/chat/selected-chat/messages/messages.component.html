@@ -1,0 +1,9 @@
+<div class="messages">
+  <app-message
+    *ngFor="let message of messages"
+    [message]="message"
+  ></app-message>
+  <div *ngIf="typingMember && isTyping" class="typing">
+    {{ typingMember.Username }} is typing{{ Dots }}
+  </div>
+</div>

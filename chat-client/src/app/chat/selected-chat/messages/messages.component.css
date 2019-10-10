@@ -1,0 +1,13 @@
+.messages {
+  /* overflow-y: scroll; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.messages .typing {
+  font-size: 14px;
+  color: #3a87ae;
+  text-align: start;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 40%;
+}

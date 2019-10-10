@@ -1,0 +1,45 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+chat-client/dist
+chat-server/dist
+chat-client/tmp
+chat-client/out-tsc
+# Only exists if Bazel was run
+chat-client/bazel-out
+
+# dependencies
+chat-client/node_modules
+chat-servet/node_modules
+shared/node_modules
+
+# profiling files
+chat-client/chrome-profiler-events*.json
+chat-client/speed-measure-plugin*.json
+
+# IDE - VSCode
+chat-client/.vscode/*
+chat-client/!.vscode/settings.json
+chat-client/!.vscode/tasks.json
+chat-client/!.vscode/launch.json
+chat-client/!.vscode/extensions.json
+chat-client/.history/*
+chat-servet/.vscode/*
+chat-servet/!.vscode/settings.json
+chat-servet/!.vscode/tasks.json
+chat-servet/!.vscode/launch.json
+chat-servet/!.vscode/extensions.json
+chat-servet/.history/*
+# misc
+chat-client/.sass-cache
+chat-client/connect.lock
+chat-client/coverage
+chat-client/libpeerconnection.log
+chat-client/npm-debug.log
+chat-client/yarn-error.log
+chat-client/testem.log
+chat-client/typings
+
+# System Files
+.DS_Store
+Thumbs.db

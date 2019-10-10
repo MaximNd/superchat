@@ -1,0 +1,63 @@
+.chat-list-container {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #dddddd;
+  height: 100%;
+}
+.contacts-filter-btn {
+  display: flex;
+  width: 100%;
+}
+.contacts-filter-btn .filter-btn {
+  width: 50%;
+  border: 0px;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  color: #777777;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+.contacts-filter-btn .filter-btn-all {
+  border-top-right-radius: 5px;
+}
+.contacts-filter-btn .filter-btn:hover {
+  background-color: #fff;
+  color: #555555;
+}
+.contacts-filter-btn .filter-btn.active {
+  background-color: #fff;
+  color: #555555;
+  border-bottom: none;
+}
+.contacts-filter-btn .filter-btn-online.active {
+  border-right: 1px solid #dddddd;
+}
+.contacts-filter-btn .filter-btn-all.active {
+  border-left: 1px solid #dddddd;
+}
+
+.chat-list {
+  height: 100%;
+  margin-top: 10px;
+  overflow: scroll;
+  margin-bottom: 15px;
+  margin-right: 1px;
+}
+.chat-list::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.chat-list::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+  background-color: #becbd9;
+  border-radius: 10px;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #9daab9;
+}

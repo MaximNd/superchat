@@ -1,0 +1,23 @@
+header {
+  background-color: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+header .header-row {
+  justify-content: space-between;
+}
+header .title {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 32px;
+  color: #333333;
+}
+header .contact-data {
+  align-self: center;
+}
+
+header .contact-data img {
+  max-width: 100px;
+}
+header .contact-data .name {
+  text-align: end;
+}

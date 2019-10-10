@@ -1,0 +1,31 @@
+<div
+  (click)="selectCurrentContact()"
+  class="contact"
+  [ngClass]="{ online: contact.IsOnline, active: isActive }"
+>
+  <div class="avatar">
+    <img [src]="'assets/img/' + contact.Avatar" alt="avatar" />
+  </div>
+  <div
+    class="contact-data"
+    [ngClass]="{
+      unread:
+        lastMessage &&
+        !lastMessage.isReaded &&
+        lastMessage.From.Id === contact.Id
+    }"
+  >
+    <span *ngIf="unreadCount > 0" class="unread-indicator">
+      <span>{{ unreadCount }}</span>
+    </span>
+    <div class="name">
+      {{ contact.Username }}
+    </div>
+    <div class="message">
+      {{ lastMessage ? (lastMessage.MessageText | slice: 0:20) : '' }}
+      <span *ngIf="lastMessage && lastMessage.MessageText.length >= 20"
+        >...</span
+      >
+    </div>
+  </div>
+</div>

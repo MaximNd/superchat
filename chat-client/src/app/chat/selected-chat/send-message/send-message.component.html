@@ -1,0 +1,14 @@
+<div class="send-message-container">
+  <form [formGroup]="messageForm" (ngSubmit)="onSendMessage()">
+    <input
+      formControlName="message"
+      id="message"
+      name="message"
+      type="text"
+      placeholder="Start chatting!"
+      (input)="onInputMessage()"
+      required
+    />
+    <button type="submit" [disabled]="messageForm.invalid">Send message</button>
+  </form>
+</div>

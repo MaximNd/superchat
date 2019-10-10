@@ -1,0 +1,53 @@
+.send-message-container {
+  padding: 10px 30px 20px 10px;
+  display: flex;
+  background-color: #d7dfe7;
+  border-top: 1px solid #dddddd;
+  border-bottom-left-radius: 5px;
+}
+.send-message-container form {
+  width: 100%;
+}
+.send-message-container input {
+  background-color: #fff;
+  margin-right: 10px;
+  outline: none;
+  width: 70%;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  padding: 13px 12px 13px 12px;
+  transition: box-shadow 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+.send-message-container input::placeholder {
+  color: #999999;
+  font-size: 14px;
+}
+.send-message-container input:focus {
+  border: 1px solid #74b9ef;
+  box-shadow: 0 0 5px #74b9ef;
+}
+.send-message-container button {
+  padding: 12px 60px;
+  border: 1px solid #357ebc;
+  background-color: #428bca;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  outline: none;
+}
+.send-message-container button:active {
+  transform: translate(1px, 2px);
+  box-shadow: 1px 1px 5px #40a9ff;
+}
+.send-message-container button:hover,
+.send-message-container button:focus {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+.send-message-container button:disabled {
+  background-color: #b0b0b0;
+  border-color: #bce1ff;
+}

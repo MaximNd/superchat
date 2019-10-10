@@ -1,0 +1,76 @@
+.contact {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100%;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 35px;
+  cursor: pointer;
+}
+.contact:hover,
+.contact.active {
+  background-color: #f8f8f8;
+}
+.contact .avatar {
+  position: relative;
+  height: 60px;
+  min-width: 60px;
+  width: 60px;
+  align-items: center;
+  border-radius: 3px;
+  display: inline-flex;
+  justify-content: center;
+  line-height: normal;
+  text-align: center;
+  vertical-align: middle;
+}
+.contact .avatar img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+.contact.online .avatar::after {
+  content: '';
+  position: absolute;
+  left: 48px;
+  top: 48px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #20d63e;
+  z-index: 99;
+}
+.contact .contact-data {
+  position: relative;
+  align-self: stretch;
+  margin-left: 15px;
+}
+.contact .contact-data.unread .unread-indicator {
+  display: inline-flex;
+  align-items: center;
+  color: #f8f8f8;
+  position: absolute;
+  line-height: 20px;
+  max-width: 100%;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  left: 140px;
+  top: 40px;
+  border-radius: 11px;
+  font-size: 14px;
+  height: 20px;
+  background-color: #22d7eb;
+  z-index: 99;
+}
+.contact .contact-data .name {
+  color: #333333;
+  font-size: 16px;
+}
+.contact .contact-data .message {
+  color: #999999;
+  font-size: 14px;
+}

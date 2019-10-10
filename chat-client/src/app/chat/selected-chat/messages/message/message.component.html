@@ -1,0 +1,14 @@
+<div class="message-container">
+  <div class="message" [ngClass]="{ me: isMe, other: !isMe }">
+    <div class="message-top">
+      <div class="name">{{ message.From.Username }}</div>
+      <div class="time">{{ message.Date | date: 'h:mm aaa' }}</div>
+    </div>
+    <div class="message-bottom">
+      {{ message.MessageText }}
+    </div>
+  </div>
+  <div *ngIf="isMe && message.IsReaded" class="indicator">
+    Seen {{ message.ReadedDate | date: 'h:mm aa' }}
+  </div>
+</div>

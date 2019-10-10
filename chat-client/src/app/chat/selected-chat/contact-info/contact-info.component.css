@@ -1,0 +1,30 @@
+.contact-info {
+  border-top-left-radius: 5px;
+  background-color: #becbd9;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 4px 1px 10px -4px #dddddd;
+}
+.contact-info .avatar {
+  border-top-left-radius: inherit;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.contact-info .avatar img {
+  border-top-left-radius: inherit;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.contact-info .info {
+  padding: 20px 35px 0px 25px;
+}
+.contact-info .info .name {
+  color: #333333;
+  font-size: 24px;
+}
+.contact-info .info .description {
+  color: #354149;
+  font-size: 14px;
+}

@@ -1,0 +1,28 @@
+<div class="row-column chat-list-container">
+  <div class="contacts-filter-btn">
+    <div
+      class="filter-btn filter-btn-online"
+      [ngClass]="{ active: !isShowAll }"
+      (click)="changeShowMode(false)"
+    >
+      Online
+    </div>
+    <div
+      class="filter-btn filter-btn-all"
+      [ngClass]="{ active: isShowAll }"
+      (click)="changeShowMode(true)"
+    >
+      All
+    </div>
+  </div>
+  <div class="chat-list">
+    <app-chat-list-item
+      *ngFor="let contact of filteredContacts; let i = index"
+      [contact]="contact"
+      [lastMessage]="getLastMessage(contact)"
+      [unreadCount]="getUnreadCount(contact)"
+      [isActive]="selectedContact && contact.Id === selectedContact.Id"
+    ></app-chat-list-item>
+  </div>
+  <app-search (inputSearch)="setSearch($event)"></app-search>
+</div>
