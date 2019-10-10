@@ -8,6 +8,7 @@ Execute the following command to boot up the application.
 
 ```bash
 cd chat-server
+npm i
 npm run start:dev
 ```
 
@@ -15,6 +16,7 @@ npm run start:dev
 
 ```bash
 cd chat-client
+npm i
 npm run start
 ```
 
